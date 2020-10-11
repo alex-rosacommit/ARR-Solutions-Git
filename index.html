@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>ARR-Solutions</title>
+	<style>
+		html,body{
+			height: 100%; width: 100%; margin: 0; background-image: url("https://raw.githubusercontent.com/alex-rosacommit/ARR-Solutions/master/imagenes/img_background.jpg");
+			background-repeat: no-repeat; background-attachment: fixed;
+		}	
+		div#main{
+			width: 1000px; text-align: center; margin: auto; background: linear-gradient(to bottom, #00BDAF, #A2FFF8); 
+		}
+		div#logo-and-nav{
+			width: 1000px; height: 200px; margin: auto; background: linear-gradient(to bottom, #00A194, #00BDAF);
+		}
+		div#logo{
+			width: 300px; height: 200px; padding-left: 10px; display: flex; align-items: center; float: left;
+		}
+		div#logo img{
+			object-fit: contain; max-width: 200px;
+		}
+		div#contenedor-nav{
+			width: 500px; height: 150px; display: inline-block; display: flex; text-align: center; align-items: center;/* border: 1px dashed blue;*/
+		}
+		/*-------------------------------------------*/
+
+			/*	Estilo del contenedor nav y los elementos que contiene	*/
+		nav#menu{
+			width: 450px; height: 80px; margin: auto; display: flex; justify-content: center;
+		}
+		nav#menu ul{
+			padding: 0; list-style-type: none; height: 30px; display: flex; justify-content: center; margin: auto;
+		}
+		nav#menu ul li.gral{
+			float: left; width: 100px; height: 100%; margin: 0; border-left: 2px solid white;
+		}
+		nav#menu ul li.gral:hover{
+			border-color: red; background-color: #048177;
+		}
+		nav#menu ul ul.secundario li:hover{
+			border-color: red; background-color: #048177;
+		}
+		nav#menu ul ul{
+			display: none;
+		}
+		nav#menu ul li:hover ul{
+			display: block;
+		}
+		nav#menu ul ul.secundario li{
+			background: #07A599; border-bottom: 1px solid white; margin: auto;
+		}
+		nav#menu li a:hover{
+			color: #DA3D1E;
+		}
+		nav#menu a{
+			text-decoration: none; font-family: Arial; font-size: 16pt; display: block; color: black; text-align: center; padding: 2px;
+		}
+		/*-------------------------------------------*/
+			/*Contenedor principal y secciones*/	
+		div#main h2{
+			font-size: 20pt;
+		}
+		div#main h3{
+			font-size: 16pt;
+		}
+		div#main section.sec-ppal p{
+			text-align: center; margin: auto; font-family: cursive; font-size: 14pt;
+		}
+		section.sec-ppal{
+			width: 430px; padding: 25px; margin: auto; border: 5px solid white; display: inline-block;
+		}
+		/*-------------------------------------------*/
+		div.img-tipos-proyectos{
+			width: 800px; margin: auto;
+		}
+		div.img-tipos-proyectos img{
+			object-fit: contain; max-height: 200px; border: 5px solid white;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div id="logo-and-nav">
+			<div id="logo"><img src="https://raw.githubusercontent.com/alex-rosacommit/ARR-Solutions/master/imagenes/ARR-Solutions_Logo.png" alt="Logo" /></div>
+			<div id="contenedor-nav">
+				<nav id="menu">
+					<ul>
+						<li class="gral"><a href="">Proyectos</a>
+							<ul class="secundario">
+								<li><a href="">Unity</a></li>
+								<li><a href="">Win forms</a></li>
+								<li><a href="./Proyectos/Arduino/index.html">Arduino</a></li>
+							</ul>
+						</li>
+						<li class="gral"><a href="https://www.youtube.com/channel/UC9w8tMjiJKnjC6f2SlqZl0g?view_as=subscriber" target="blank">Youtube</a></li>
+						<li class="gral"><a href="">Elements</a></li>
+						<li class="gral"><a href="">Elements</a></li>
+					</ul>
+				</nav>
+			</div>						
+		</div>
+		<section class="sec-ppal">
+			<h2>¿Porque fue creado este sitio?</h2>
+			<p>
+				Este sitio fue creado con el fin de tener un lugar donde poder tener un facil acceso a los proyectos que voy realizando en el mundo de la programacion, de alguna manera dejar constancia y aplicar lo aprendido.
+			</p>
+		</section>
+		<section class="sec-ppal">
+			<h2>¿Que encontraras en este sitio?</h2>
+			<p>
+				Aca econtraras todos los proyectos que he realizado como estudiante, de la "Tecnicatura universitaria en programacion" en la U.T.N Facultad Regional Haedo, con el afan de aplicar los conocimientos que voy adquiriendo.
+			</p>
+		</section>
+		<h3>Todos los proyectos que encotrarás aca estan realizados con los siguientes framework o lenguages:</h3>
+		<div class="img-tipos-proyectos">
+			<img src="imagenes/img_arduino.jpg" alt="Imagen placa Arduino">
+			<img src="imagenes/img_unity.jpg" alt="Imagen logo Unity">
+			<img src="imagenes/img_csharp.jpg" alt="Imagen logo lenguaje C sharp">
+			<img src="imagenes/img_C.jpg" alt="Imagen logo lenguaje C">
+		</div>
+	</div>
+</body>
+</html>

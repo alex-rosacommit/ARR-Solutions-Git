@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Arduino</title>
+	<style type="text/css">
+		html,body{
+			width: 100%; height: 100%; margin: 0; background-image: url("https://raw.githubusercontent.com/alex-rosacommit/ARR-Solutions/master/imagenes/bg-Arduino.jpg");
+			background-repeat: no-repeat; background-attachment: fixed;
+		}
+		div#cajaPrincipal{
+			width: 1435px; height: 100%; margin: auto;
+		}
+		div#logo-y-titulo{
+			width: 100%; height: 200px; margin: auto; display: flex; align-items: center; background: #01BBAD;
+		}
+		div.logo{
+			width: 300px; height: 200px;padding-left: 10px; display: flex; align-items: center; float: left; background: #00A194;
+		}
+		div.logo img{
+			object-fit: contain; max-width: 200px;
+		}
+		div#contenidoPrincipal{
+			width: 1000px; margin: auto; padding: 25px; background: #63F5EA;
+		}
+		div#contenedor-titulo{
+			width: 100%; height: 50px; display: inline-block; display: flex; align-items: center; background: #00A194;/* border: 1px solid red;*/
+		}
+		div#cajaIzquierda,div#cajaDerecha{
+			width: 250px; height: 500px; float: right; margin: 0; border: 1px solid green;
+		}
+		div h1#titulo{
+			margin-left: 500px;
+		}
+		hr{
+			color: red;
+		}
+		section#introduccion p{
+			text-align: center; margin: auto; font-family: cursive; font-size: 12pt;
+		}
+		section article.artProyect img{
+			object-fit: contain; max-width: 800px;
+		}
+	</style>
+</head>
+<body>
+	<div id="logo-y-titulo">
+		<div class="logo"><img id="logo-Img" src="https://raw.githubusercontent.com/alex-rosacommit/ARR-Solutions/master/imagenes/ARR-Solutions_Logo.png" alt="Logo" /></div>
+		<div id="contenedor-titulo"><h1 id="titulo">Proyectos en Arduino</h1></div>
+		<div class="logo"><img src="https://raw.githubusercontent.com/alex-rosacommit/ARR-Solutions/master/imagenes/ArduinoSitioLogo.png" alt="Logo Arduino"></div>				
+	</div>
+	<div id="cajaPrincipal">
+		<div id="contenidoPrincipal">
+			<h2>¿Que es Arduino?</h2>
+			<section id="introduccion">
+				<p>
+				Arduino es una plataforma electrónica de código abierto basada en hardware y software fáciles de usar. Las placas Arduino pueden leer entradas (luz en un sensor, un dedo en un botón o un mensaje de Twitter) y convertirlo en una salida, activando un motor, encendiendo un LED, publicando algo en línea. Puede decirle a su tablero qué hacer enviando un conjunto de instrucciones al microcontrolador en el tablero. Para hacerlo, utiliza el lenguaje de programación Arduino (basado en Wiring ) y el Software Arduino (IDE), basado en Processing .
+				</p>
+				<p>
+					A lo largo de los años, Arduino ha sido el cerebro de miles de proyectos, desde objetos cotidianos hasta complejos instrumentos científicos. Una comunidad mundial de creadores (estudiantes, aficionados, artistas, programadores y profesionales) se ha reunido en torno a esta plataforma de código abierto, sus contribuciones se han sumado a una increíble cantidad de conocimiento accesible que puede ser de gran ayuda tanto para principiantes como para expertos.
+				</p>
+				<p>
+					Arduino nació en el Ivrea Interaction Design Institute como una herramienta fácil para la creación rápida de prototipos, dirigida a estudiantes sin experiencia en electrónica y programación. Tan pronto como llegó a una comunidad más amplia, la placa Arduino comenzó a cambiar para adaptarse a las nuevas necesidades y desafíos, diferenciando su oferta desde placas simples de 8 bits hasta productos para aplicaciones de IoT, wearable, impresión 3D y entornos integrados. Todas las placas Arduino son completamente de código abierto, lo que permite a los usuarios construirlas de forma independiente y eventualmente adaptarlas a sus necesidades particulares. El software también es de código abierto y está creciendo gracias a las contribuciones de los usuarios de todo el mundo.
+				</p>
+			</section><hr>
+			<section id="Proyecto-01">
+				<h2>Luces RGB -Control bluetooth- </h2>
+				<p>
+					Esté fué mi primer proyecto para adentrarme en el mundo de <a href="https://www.arduino.cc/">Arduino</a>. El proyecto consiste en la creación de una aplicación para android la cual, mediante los servicios bluetooth, del dispositivo android, logre controlar la intencidad, los colores y la intencidad de la tira led(RGB).
+				</p>
+				<h3>Las tres partes del proyecto:</h3>
+				<ol>
+					<li>Desarrollo de aplicación para dispositivo Android</li>
+					<li>Circuito electronico de comunicación Arduino-led(RGB)</li>
+					<li>Configuración de modulo bluetooth y carga de codigo en placa Arduino</li>
+				</ol>
+				<article>
+					<h3>1-Desarrollo de aplicación para dispositivo Android:</h3>
+					<p>
+						Para crear la aplicación que se va a encargar de enviar las ordenes a la placa arduino para controlar a la tira led(RGB) utilicé <a href="https://appinventor.mit.edu/">App Inventor</a>, App Inventor es un entorno de desarrollo de software creado por Google Labs para la elaboración de aplicaciones destinadas al sistema operativo Android, y me quedo asi.
+					</p>
+				</article><hr>
+				<article>
+					<h3>2-Ensamble de circuito electronico de comunicación Arduino-led(RGB):</h3>
+					<p>
+						El circuito electronico para este proyecto es sumamente sencillo solo es necesario 3 transistores <a href="https://www.alldatasheet.es/datasheet-pdf/pdf/68172/IRF/IRF540N.html" target="blank">Mosfet IRF54N</a> y una placa de cobre donde montaremos el circuito.
+					</p>
+				</article><hr>
+				<article class="artProyect">
+					<h3>3-Configuración de modulo bluetooth y carga de codigo en placa Arduino:</h3>
+					<p>
+						El modulo bluetooth para arduino que utilicé fue el <a href="https://components101.com/wireless/hc-05-bluetooth-module" target="blank">HC05</a> y para la configuración del mismo utlice la placa arduino Uno y el codigo es el siguiente:
+					</p>
+					<img src="https://raw.githubusercontent.com/alex-rosacommit/ARR-Solutions/master/imagenes/config-HC05.jpg" alt="Captura codigo Arduino">
+					<ul>
+						<li>Descargar codigo <a href="../../Download/Bluetooth_monitor_serie.rar" download="Codigo-Monitor-Serie">aquí.</a></li>
+						<li>Comandos AT y explicacion de como configurar <a href="https://naylampmechatronics.com/blog/24_configuracion-del-modulo-bluetooth-hc-05-usa.html">aqui.</a></li>
+					</ul><br>
+					<p>En la placa arduino cargamos el siguiente codigo:</p>
+					<img src="https://raw.githubusercontent.com/alex-rosacommit/ARR-Solutions/master/imagenes/Codigo-RGB-Arduino.jpg" alt="Captura del codigo para Arduino">
+					<ul>
+						<li>Descargar codigo <a href="../../Download/Encender_Led_RGB.rar" download="Codigo-De-Funcion-Arduino">aquí.</a></li>
+					</ul>
+				</article>
+			</section>
+		</div>
+	</div>
+</body>
+</html>
