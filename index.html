@@ -76,12 +76,31 @@
 		div.img-tipos-proyectos img{
 			object-fit: contain; max-height: 200px; border: 5px solid white;
 		}
+		/*-------------------------------------------*/
 	</style>
 </head>
 <body>
 	<div id="main">
 		<div id="logo-and-nav">
-			<div id="logo"><img src="https://raw.githubusercontent.com/alex-rosacommit/ARR-Solutions-Git/master/Imagenes/ARR-Solutions_Logo.png" alt="Logo" /></div>
+			<div id="logo"><img id="inicio" src="https://raw.githubusercontent.com/alex-rosacommit/ARR-Solutions-Git/master/Imagenes/ARR-Solutions_Logo.png" alt="Logo" /></div>
+			<script>
+				"use strict"
+
+				var inicio = document.getElementById("inicio");
+
+				inicio.onclick = function(){
+					window.location.reload(true);
+				}
+				inicio.onmouseover = function(){
+					inicio.style.borderRadius = "10%";
+					inicio.style.background = "#02D6C8";
+					inicio.style.cursor = "pointer";
+				}
+				inicio.onmouseout = function(){
+					inicio.style.border = "none";
+					inicio.style.background = "none";
+				}
+			</script>
 			<div id="contenedor-nav">
 				<nav id="menu">
 					<ul>
@@ -111,7 +130,7 @@
 				Aca econtraras todos los proyectos que he realizado como estudiante, de la "Tecnicatura universitaria en programacion" en la U.T.N Facultad Regional Haedo, con el afan de aplicar los conocimientos que voy adquiriendo.
 			</p>
 		</section>
-		<h3>Todos los proyectos que encotrarás aca estan realizados con los siguientes framework o lenguages:</h3>
+		<h3>Todos los proyectos que encotrarás aca estan realizados con los siguientes framework o lenguajes:</h3>
 		<div class="img-tipos-proyectos">
 			<img src="https://raw.githubusercontent.com/alex-rosacommit/ARR-Solutions-Git/master/Imagenes/img_arduino.jpg" alt="Imagen placa Arduino">
 			<img src="https://raw.githubusercontent.com/alex-rosacommit/ARR-Solutions-Git/master/Imagenes/img_unity.jpg" alt="Imagen logo Unity">

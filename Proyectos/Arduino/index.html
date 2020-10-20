@@ -44,12 +44,41 @@
 </head>
 <body>
 	<div id="logo-y-titulo">
-		<div class="logo"><img id="logo-Img" src="https://raw.githubusercontent.com/alex-rosacommit/ARR-Solutions-Git/master/Imagenes/ARR-Solutions_Logo.png" alt="Logo" />
+		<div class="logo"><img id="inicioImg" src="https://raw.githubusercontent.com/alex-rosacommit/ARR-Solutions-Git/master/Imagenes/ARR-Solutions_Logo.png" alt="Logo" />
 		</div>
 		<div id="contenedor-titulo"><h1 id="titulo">Proyectos en Arduino</h1></div>
-		<div class="logo"><img src="https://raw.githubusercontent.com/alex-rosacommit/ARR-Solutions-Git/master/Imagenes/ArduinoSitioLogo.png" alt="Logo Arduino">
+		<div class="logo"><img id="arduinoImg" src="https://raw.githubusercontent.com/alex-rosacommit/ARR-Solutions-Git/master/Imagenes/ArduinoSitioLogo.png" alt="Logo Arduino">
 		</div>				
 	</div>
+	<script>
+		"use strict"
+
+		var inicio = document.getElementById("inicioImg");
+		var siteArduino = document.getElementById("arduinoImg");
+
+		inicio.onclick = function(){
+			window.location.assign("https://arr-solutions-website.herokuapp.com/"); 
+		}
+		inicio.onmouseover = function(){
+			inicio.style.borderRadius = "10%";
+			inicio.style.background = "#02D6C8";
+			inicio.style.cursor = "pointer";
+		}
+		inicio.onmouseout = function(){
+			inicio.style.background = "none";
+		}
+		siteArduino.onclick = function(){
+			window.location.assign("https://www.arduino.cc/");
+		}
+		siteArduino.onmouseover = function(){
+			siteArduino.style.borderRadius = "10%";
+			siteArduino.style.background = "#02D6C8";
+			siteArduino.style.cursor = "pointer";
+		}
+		siteArduino.onmouseout = function(){
+			siteArduino.style.background = "none";
+		}
+	</script>
 	<div id="cajaPrincipal">
 		<div id="contenidoPrincipal">
 			<h2>¿Que es Arduino?</h2>
@@ -78,8 +107,12 @@
 				<article>
 					<h3>1-Desarrollo de aplicación para dispositivo Android:</h3>
 					<p>
-						Para crear la aplicación que se va a encargar de enviar las ordenes a la placa arduino para controlar a la tira led(RGB) utilicé <a href="https://appinventor.mit.edu/">App Inventor</a>, App Inventor es un entorno de desarrollo de software creado por Google Labs para la elaboración de aplicaciones destinadas al sistema operativo Android, y me quedo asi.
+						Para crear la aplicación que se va a encargar de enviar las ordenes a la placa arduino para controlar a la tira led(RGB) utilicé <a href="https://appinventor.mit.edu/">App Inventor</a>, App Inventor es un entorno de desarrollo de software creado por Google Labs para la elaboración de aplicaciones destinadas al sistema operativo Android, y me quedo asi:
 					</p>
+					<ul>
+						<li>El diseño de la aplicacion se ve de la siguiente manera:</li>
+					</ul>
+					<img src="" alt="Captura diseño de aplicacion en App Inventor">
 				</article><hr>
 				<article>
 					<h3>2-Ensamble de circuito electronico de comunicación Arduino-led(RGB):</h3>
