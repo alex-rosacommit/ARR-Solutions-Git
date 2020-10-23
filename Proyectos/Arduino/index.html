@@ -4,7 +4,7 @@
 	<title>Arduino</title> <meta charset="utf-8">
 	<style type="text/css">
 		html,body{
-			width: 100%; height: 100%; margin: 0; background-image: url("https://github.com/alex-rosacommit/ARR-Solutions-Git/blob/master/Proyectos/Arduino/Imagenes/bg-Arduino.jpg?raw=true");
+			width: 100%; height: 100%; margin: 0; background-image: url("./Imagenes/bg-Arduino.jpg");
 			background-repeat: no-repeat; background-attachment: fixed;
 		}
 		div#cajaPrincipal{
@@ -37,17 +37,20 @@
 		section#introduccion p{
 			text-align: center; margin: auto; font-family: cursive; font-size: 12pt;
 		}
-		section article.artProyect img{
+		section#Proyecto-01 article img{
 			object-fit: contain; max-width: 800px;
+		}
+		section#Proyecto-01 article img.vertical{
+			object-fit: contain; max-height: 400px;
 		}
 	</style>
 </head>
 <body>
 	<div id="logo-y-titulo">
-		<div class="logo"><img id="inicioImg" src="https://raw.githubusercontent.com/alex-rosacommit/ARR-Solutions-Git/master/Imagenes/ARR-Solutions_Logo.png" alt="Logo" />
+		<div class="logo"><img id="inicioImg" src="./Imagenes/ARR-Solutions_Logo.png" alt="Logo" />
 		</div>
 		<div id="contenedor-titulo"><h1 id="titulo">Proyectos en Arduino</h1></div>
-		<div class="logo"><img id="arduinoImg" src="https://github.com/alex-rosacommit/ARR-Solutions-Git/blob/master/Proyectos/Arduino/Imagenes/ArduinoSitioLogo.png?raw=true" alt="Logo Arduino">
+		<div class="logo"><img id="arduinoImg" src="Imagenes/ArduinoSitioLogo.png" alt="Logo Arduino">
 		</div>				
 	</div>
 	<script>
@@ -104,20 +107,29 @@
 					<li>Circuito electronico de comunicación Arduino-led(RGB)</li>
 					<li>Configuración de modulo bluetooth y carga de codigo en placa Arduino</li>
 				</ol>
-				<article>
+				<article class="artProyect">
 					<h3>1-Desarrollo de aplicación para dispositivo Android:</h3>
 					<p>
 						Para crear la aplicación que se va a encargar de enviar las ordenes a la placa arduino para controlar a la tira led(RGB) utilicé <a href="https://appinventor.mit.edu/">App Inventor</a>, App Inventor es un entorno de desarrollo de software creado por Google Labs para la elaboración de aplicaciones destinadas al sistema operativo Android, y me quedo asi:
 					</p>
 					<ul>
-						<li>El diseño de la aplicacion se ve de la siguiente manera:</li>
+						<li>El bloque de codigo de la aplicacion en App Inventor me quedo de la siguiente manera:
+							<img src="https://github.com/alex-rosacommit/ARR-Solutions-Git/blob/master/Proyectos/Arduino/Imagenes/codigoEnBloquesAppInventor.png?raw=true" alt="Captura diseño de aplicacion en App Inventor">
+						</li>
+						<li>El diseño y la vista de la palicación desde el celular(Apagado) es la siguiente:<br>
+							<img class="vertical" src="./Imagenes/App01.jpeg" alt="Captura de aplicacion en el movil">
+						</li>
+						<li>El diseño y la vista de la palicación desde el celular(Encendido) es la siguiente:<br>
+							<img class="vertical" src="./Imagenes/App02.jpeg" alt="Captura de aplicacion en el movil">
+						</li>
+						<li>Descargar App <a href="./Download/RGB-Light_Controller.rar" download="RGB-Light_Controller">aquí</a></li>
 					</ul>
-					<img src="https://github.com/alex-rosacommit/ARR-Solutions-Git/blob/master/Proyectos/Arduino/Imagenes/codigoEnBloquesAppInventor.png?raw=true" alt="Captura diseño de aplicacion en App Inventor">
+					
 				</article><hr>
-				<article>
+				<article class="artProyect">
 					<h3>2-Ensamble de circuito electronico de comunicación Arduino-led(RGB):</h3>
 					<p>
-						El circuito electronico para este proyecto es sumamente sencillo solo es necesario 3 transistores <a href="https://www.alldatasheet.es/datasheet-pdf/pdf/68172/IRF/IRF540N.html" target="blank">Mosfet IRF54N</a> y una placa de cobre donde montaremos el circuito.
+						El circuito electronico para este proyecto es sumamente sencillo solo es necesario 3 transistores <a href="https://www.alldatasheet.es/datasheet-pdf/pdf/68172/IRF/IRF540N.html" target="blank">Mosfet IRF54N</a> y una placa de cobre donde montaremos el circuito.<br>La placa tendrá el siquiente esquema de pistas:<br><img src="./Imagenes/Circuito_Pistas.PNG" alt="Imagen pistas de circuito"><br>y el siguiente esquema de componentes:<br><img src="./Imagenes/Circuito_Componentes.PNG" alt="Imagen ubicacion de componentes en circuito"><br>ambos esquemas podran descargarlo desde <a href="./Download/Esquemas.rar" download="Esquemas_cicuito_RGB">aquí</a>
 					</p>
 				</article><hr>
 				<article class="artProyect">
